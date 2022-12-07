@@ -4,15 +4,15 @@ const generateTeam = team => {
         return `
     <div class="employeeCard">
         <div class="cardTitle">
-            <h2 class="card-title">${manager.getName()}</h2>
-            <h3 class="card-title">${manager.getRole()}</h3>
+            <h2 class="cardTitle">${manager.getName()}</h2>
+            <h3 class="cardTitle">${manager.getRole()}</h3>
         </div>
         <div class="cardBody">
-            <ul class="list-group">
+            <dev class="list-group">
                 <p class="item">ID: ${manager.getId()}</p>
                 <p class="item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
                 <p class="litem">Office number: ${manager.getOfficeNumber()}</p>
-            </ul>
+            </dev>
         </div>
     </div>
         `;
@@ -22,15 +22,15 @@ const generateTeam = team => {
         return `
 <div class="employeeCard">
     <div class="cardTitle">
-        <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title">${engineer.getRole()}</h3>
+        <h2 class="cardTitle">${engineer.getName()}</h2>
+        <h3 class="cardTitle">${engineer.getRole()}</h3>
     </div>
     <div class="cardBody">
-        <ul class="list-group">
+        <dev class="list-group">
             <p class="item">ID: ${engineer.getId()}</p>
             <p class="item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></p>
             <p class="litem">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a></p>
-        </ul>
+        </dev>
     </div>
 </div>
         `;
@@ -45,11 +45,11 @@ const generateTeam = team => {
         <h3 class="cardTitle">${intern.getRole()}</h3>
     </div>
     <div class="cardBody">
-        <ul class="list-group">
+        <dev class="list-group">
             <p class="item">ID: ${intern.getId()}</p>
             <p class="item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></p>
             <p class="item">School: ${intern.getSchool()}</p>
-        </ul>
+        </dev>
     </div>
 </div>
         `;
@@ -90,9 +90,11 @@ module.exports = team => {
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <header>
-        <h1>My Team Profile</h1>
-   </header>
+    <dev class="title">
+        <header>
+         <h1>My Team Profile</h1>
+        </header>
+    </dev>
     <div class="container">
         <div class="teamCards">
              ${generateTeam(team)}
