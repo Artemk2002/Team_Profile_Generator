@@ -27,7 +27,7 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated      
 
 ## Walk Through Video URL
-URL:
+URL: https://drive.google.com/file/d/17CgVSiCLB-7w28IPNnTRIhAJ5tF0EL69/view?usp=sharing
 
 
 ## Home Page
